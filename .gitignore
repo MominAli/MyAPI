@@ -1,0 +1,23 @@
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Ignore Rider files
+.idea/
+
+# Ignore logs and temp files
+*.log
+*.tmp
+
+# Ignore user-specific files
+*.userprefs
+*.userosscache
+*.sln.docstates
+
+# Ignore published output
+publish/
