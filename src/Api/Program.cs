@@ -1,11 +1,8 @@
 ﻿
-//refernces: https://copilot.microsoft.com/conversations/join/dHRVsHb9NKeWEdVkLBe4F
-
-
-
-
+//refernces: https://copilot.microsoft.com/chats/QpG5Gtg2jMkaN9QabXuS6
 
 // Api/Program.cs
+
 using Api.Middleware;
 using Application.Interfaces;
 using Application.Services;
