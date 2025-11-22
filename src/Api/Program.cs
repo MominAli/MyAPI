@@ -1,3 +1,8 @@
+
+//refernces: https://copilot.microsoft.com/conversations/join/dHRVsHb9NKeWEdVkLBe4F
+
+
+
 // Api/Program.cs
 using Api.Middleware;
 using Application.Interfaces;
@@ -76,8 +81,13 @@ builder.Services.AddSingleton<TokenService>(); // stateless utility
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddResponseCompression();
+
 
 var app = builder.Build();
+
+
+
 
 // Global exception handling middleware
 app.UseMiddleware<ErrorHandlingMiddleware>();
@@ -91,13 +101,14 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Run();
-
-
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.Run();
+
+
+
